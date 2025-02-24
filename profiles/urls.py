@@ -4,6 +4,4 @@ from django.urls import path
 
 from . import views
 
-urlpatterns = [path("accounts/profile/", views.profile, name="profile")] + static(
-    settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
-)
+urlpatterns = [path("profile/", views.profile, name="profile"),path("edit_profile/", views.profile_edit, name="profile_edit")] 

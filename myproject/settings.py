@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     "allauth.usersessions",
     # mine
     "profiles.apps.ProfilesConfig",
+    "home"
 ]
 
 MIDDLEWARE = [

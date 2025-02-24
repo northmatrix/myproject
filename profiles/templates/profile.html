@@ -1,7 +1,15 @@
 {% extends "allauth/layouts/base.html" %}
+
 {% block content %}
+
 <img width="100px" height="100px" src="{{ user.profile.profile_picture.url }}" alt="Profile Picture" />
+
 <p>Username: {{ user.username }}</p>
+
+{% if user.email %}
 <p>Email: {{ user.email }}</p>
+{% endif %}
+
 <p>Bio: {{ user.profile.bio }}</P
+
 {% endblock %}
