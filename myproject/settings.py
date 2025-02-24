@@ -57,7 +57,16 @@ INSTALLED_APPS = [
     "profiles.apps.ProfilesConfig",
     "home",
     'bootstrap5',
+    # headles
+    "allauth.headless",
+        'rest_framework',
 ]
+
+HEADLESS_FRONTEND_URLS = {
+    "account_confirm_email": "https://app.project.org/account/verify-email/{key}",
+    "account_reset_password_from_key": "https://app.org/account/password/reset/key/{key}",
+    "account_signup": "https://app.org/account/signup",
+}
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
