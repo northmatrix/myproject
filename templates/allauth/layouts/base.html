@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
@@ -83,4 +86,5 @@
         {% block extra_body %}
         {% endblock extra_body %}
     </body>
+    <button type="button" class="btn btn-primary">Primary</button>
 </html>
